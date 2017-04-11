@@ -326,6 +326,13 @@ FUNCTION {format.doi}
   if$
 }
 
+FUNCTION {format.note}
+{ note empty$
+    { "" }
+    { new.block "\textcolor{cv_gray}{" note * "}" * }
+  if$
+}
+
 FUNCTION {format.title}
 { title empty$
     { "" }
@@ -650,7 +657,7 @@ FUNCTION {article}
   %format.doi output
   format.url output
   new.block
-  note output
+  format.note output
   fin.entry
 }
 
