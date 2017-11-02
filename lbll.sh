@@ -9,4 +9,7 @@ bibtex "${basename}2.aux" && \
 echo "============================================ bibtex ${basename}3.aux ============================================" && \
 bibtex "${basename}3.aux" && \
 echo "============================================ pdflatex $basename.tex ============================================" && \
-pdflatex "$basename.tex" 
+pdflatex "$basename.tex" && \
+echo "============================================ removing auxiliary files ============================================" && \
+./rmalltexcrap.sh
+
