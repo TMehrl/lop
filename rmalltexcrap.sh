@@ -9,4 +9,6 @@ rm *.lot
 rm *.log
 rm *.maf
 rm *.mtc
+rm *.bak
+rm *.sav
 rm *.synctex.gz
